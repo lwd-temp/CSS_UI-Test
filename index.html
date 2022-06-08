@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--><!-- Responsive，合适时取消注释 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ikia's Fansite</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
@@ -18,9 +18,9 @@
 
 <body onload="init()">
     <header>
-        <div style="margin-left: auto;"><button>Music</button></div>
-        <div><button>Recorded live</button></div>
-        <div><button>Re-creations</button></div>
+        <div style="margin-left: auto;"><button onclick="window.location.href='#music'">Music</button></div>
+        <div><button onclick="window.location.href='#live'">Recorded live</button></div>
+        <div><button onclick="window.location.href='#recreations'">Re-creations</button></div>
         <div><button>Others</button></div>
     </header>
     <section class="s1">
@@ -45,7 +45,7 @@
             View more.
         </button>
     </section>
-    <section class="s3">
+    <section class="s3" id="music">
         <span class="s3-1">
             <span style="font-family: 'Corbel';font-size: 65px;margin-bottom: 10px;display: block;">
                 Songs
@@ -65,7 +65,7 @@
         </div>
         <div class="div-line"></div>
     </section>
-    <section class="s3">
+    <section class="s3" id="live">
         <span class="s3-1">
             <span style="font-family: 'Corbel';font-size: 65px;margin-bottom: 10px;display: block;">
                 Recorded live
@@ -80,7 +80,7 @@
         </div>
         <div class="div-line"></div>
     </section>
-    <section class="s3">
+    <section class="s3" id="recreations">
         <span class="s3-1">
             <span style="font-family: 'Corbel';font-size: 65px;margin-bottom: 10px;display: block;">
                 Re-creations
@@ -98,14 +98,14 @@
     <footer>
         <div>
             Friendly links<br>
-            <span onclick="window.open('https://space.bilibili.com/1242109519')">Project Wildfire</span><br>
-            <span onclick="window.open('https://www.tourism.ac.jp/')">Osaka University of Tourism</span>
+            <span onclick="window.open('https:\/\/space.bilibili.com\/1242109519')">Project Wildfire</span><br>
+            <span onclick="window.open('https:\/\/www.tourism.ac.jp\/')">Osaka University of Tourism</span>
         </div>
         <br>
         <div>
-            Made by&nbsp;&nbsp;&nbsp;&nbsp;
-            <span onclick="window.open('https://space.bilibili.com/347428639')">Bilibili@珈乐今天吃舍曲林</span>
-            <span onclick="window.open('https://space.bilibili.com/490890507')">of the group of Ikier</span>
+            Made by
+            <span onclick="window.open('https:\/\/space.bilibili.com\/347428639')">珈乐今天吃舍曲林@bilibili</span>
+            <span onclick="window.open('https:\/\/space.bilibili.com\/490890507')">of the group of Ikier</span>
         </div>
     </footer>
 </body>
